@@ -4,9 +4,9 @@
   "description": "Selling my 2013 Acura ILX",
   "main": "index.js",
   "scripts": {
-    "build": "postcss tailwind.css -o dist/css/styles.css",
+    "build": "postcss tailwind.css -o docs/css/styles.css",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "postcss tailwind.css -o dist/css/styles.css --watch"
+    "watch": "postcss tailwind.css -o docs/css/styles.css --watch"
   },
   "keywords": [
     "2013",
