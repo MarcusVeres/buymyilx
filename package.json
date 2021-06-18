@@ -1,0 +1,27 @@
+{
+  "name": "buymyilx.ca",
+  "version": "1.0.0",
+  "description": "Selling my 2013 Acura ILX",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss tailwind.css -o dist/css/styles.css",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "postcss tailwind.css -o dist/css/styles.css --watch"
+  },
+  "keywords": [
+    "2013",
+    "Acura",
+    "ILX",
+    "Dynamic",
+    "Manual"
+  ],
+  "author": "Marcus",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.5",
+    "postcss-cli": "^8.3.1",
+    "postcss-import": "^14.0.2",
+    "tailwindcss": "^2.2.2"
+  }
+}
