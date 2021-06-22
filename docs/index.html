@@ -14,111 +14,313 @@
 
     <!-- scripts -->
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
-
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script src="js/scripts.js"></script>
 
 </head>
 
 <body>
 
-    <section class="header">
-        <h1 class="text-red-500 text-3xl w-[321px]">
-            Buy my 2013 Acura ILX Dynamic (in the GTA)
-        </h1>
-        <nav>
-            <ul>
-                <a href="#Home">
-                    <li>
-                        <i class="fa fa-home"></i> Home
-                    </li>
-                </a>
-            </ul>
+    <section class="py-4 bg-white shadow header mlit-sticky-header">
+        <nav class="">
+            <div class="container max-w-3xl mx-auto">
+                <ul class="flex items-center justify-center">
+                    <a href="#Home">
+                        <li>
+                            <i class="fa fa-home"></i> Home
+                        </li>
+                    </a>
+                    <a href="#Overview">
+                        <li>
+                            <i class="fa fa-home"></i> Overview
+                        </li>
+                    </a>
+                    <a href="#Features">
+                        <li>
+                            <i class="fa fa-universal-access"></i> Features
+                        </li>
+                    </a>
+                    <a href="#Gallery">
+                        <li>
+                            <i class="fa fa-photo-video"></i> Gallery
+                        </li>
+                    </a>
+                    <a href="#FAQs">
+                        <li>
+                            <i class="fa fa-question"></i> FAQs
+                        </li>
+                    </a>
+                    <a href="#Contact">
+                        <li>
+                            <i class="fa fa-phone"></i> Contact
+                        </li>
+                    </a>
+                </ul>
         </nav>
+        </div>
     </section>
 
-    <section id="Hero">
-        Pure CSS Scrolling gallery of all pictures of the car. 
+    <section id="Home" class="py-0">
+        <img class="w-full max-h-[640px]"
+            src="https://www.motortrend.com/uploads/sites/5/2013/12/2013-acura-ILX-profile.jpg?fit=around%7C1000:625">
     </section>
 
-    <section id="Intro">
-        For sale is my 2013 Acura ILX 2.4L .Premium Package I've owned this vehicle since 2015 and it's been an absolute
-        pleasure. The car drives and sounds great and has been treated with respect since it's purchase. The odometer
-        currently reads 157K, vast majority was long distance/ highway driving.
+    <section id="Overview">
+        <div class="container">
+            <h1 class="mt-8 mb-0 text-4xl text-center text-gray-400">
+                2013 Acura ILX Dynamic
+            </h1>
+            <h2 class="mt-2 text-2xl text-center text-gray-700">
+                71,000 km
+            </h2>
+            <h2 class="my-12 text-2xl text-center text-gray-400">
+                $15,995
+            </h2>
+            <ul class="mlit-feature-grid">
+                <li>
+                    <h3>201</h3>
+                    <p>
+                        Horsepower
+                    </p>
+                </li>
+                <li>
+                    <h3>6-Speed</h3>
+                    <p>
+                        Stick Shift
+                    </p>
+                </li>
+                <li>
+                    <h3>2.4L</h3>
+                    <p>
+                        Displacement
+                    </p>
+                </li>
+                <li>
+                    <i class="fa fa-tachometer-alt"></i>
+                    <p>
+                        Low, low mileage!
+                    </p>
+                </li>
+                <li>
+                    <i class="fa fa-user-tie"></i>
+                    <p>
+                        One owner
+                    </p>
+                </li>
+                <li>
+                    <i class="fa fa-question"></i>
+                    <p>
+                        Front-Wheel Drive
+                    </p>
+                </li>
+                <li>
+                    <i class="fa fa-wrench"></i>
+                    <p>
+                        Well-Maintained
+                    </p>
+                </li>
+                <li>
+                    <i class="fa fa-search"></i>
+                    <p>
+                        Safety inspection
+                    </p>
+                </li>
+                <li>
+                    <i class="fa fa-shield-alt"></i>
+                    <p>
+                        CARPROOF
+                    </p>
+                </li>
+                <li>
+                    <i class="fa fa-snowflake"></i>
+                    <p>
+                        Winter Tires
+                    </p>
+                </li>
+                <li>
+                    <i class="fa fa-cloud-showers-heavy"></i>
+                    <p>
+                        New wipers
+                    </p>
+                </li>
+                <li>
+                    <i class="fa fa-car-battery"></i>
+                    <p>
+                        New battery
+                    </p>
+                </li>
+            </ul>
 
-        I’m in the process of to another country and the car is available from December
+            <div class="max-w-3xl px-6 mx-auto my-12 text-gray-500 sm:px-14">
+                <p>
+                    I am selling my 2013 Acura ILX (Dynamic Package).
+                    This is the last year Acura offered a manual transmission with the K24-Series engine.
+                </p>
+                <p>
+                    The car drives and handles great.
+                    I've owned it since November 2012 and it's been an absolute pleasure!
+                    All repairs have been done by licensed mechanics and it has exclusively drank premium (93 octane)
+                    fuel.
+                </p>
+                <p>
+                    I lived close to work (or worked from home) for 6 of the past 9 years, so it's mostly been used for
+                    grocery trips and weekend driving.
+                </p>
+                <p>
+                    The car was given a safety inspection on July 2nd, 2021 and the CARPROOF is available <a
+                        href="#">here</a>.
+                    Comes with both summer and winter wheel/ tire packages.
+                    Summer tires are currently installed.
+                </p>
+                <p>
+                    Considering the age and mileage, I would say the car's in excellent condition.
+                    Typical wear and tear, blemishes and scratches for a vehicle this age are present.
+                    I replaced the battery and wipers in July to prepare it for sale.
+                </p>
+                <p class="mb-8">
+                    You can find more information on these websites:
+                </p>
+                <ul class="flex flex-col justify-between md:flex-row mlit-tag-list">
+                    <a href="https://www.auto123.com/en/new-cars/technical-specs/acura/ilx/2013/base/dynamic/#suspension"
+                        target="_blank">
+                        <li>
+                            auto123 - Technical Specs
+                        </li>
+                    </a>
+                    <a href="https://www.motortrend.com/cars/acura/ilx/2013/2013-acura-ilx-verdict" target="_blank">
+                        <li>
+                            MotorTrend - Review
+                        </li>
+                    </a>
+                    <a href="https://www.autoblog.com/buy/2013-Acura-ILX-2.4L_w_Premium_Package__4dr_Sedan/"
+                        target="_blank">
+                        <li>
+                            Autoblog - Review
+                        </li>
+                    </a>
+                </ul>
+            </div>
 
-        Considering its age and mileage I would say the car is in "excellent" condition. Typical wear and tear/
-        blemishes for a vehicle of this age are present. This is the last year Acura offered a Manual transmission with
-        the k24 series motor.
+            <h2 id="Features" class="text-center text-gray-400">
+                Features at a Glance
+            </h2>
+            <ul class="mb-6 mlit-feature-grid">
+                <li>
+                    <i class="fa fa-satellite-dish"></i>
+                    <p>
+                        Keyless Entry
+                    </p>
+                </li>
+                <li>
+                    <i class="fab fa-bluetooth"></i>
+                    <p>
+                        Bluetooth
+                    </p>
+                </li>
+                <li>
+                    <i class="fa fa-eye"></i>
+                    <p>
+                        Back-Up Camera
+                    </p>
+                </li>
+                <li>
+                    <i class="fa fa-temperature-high"></i>
+                    <p>
+                        Heated Front Seats
+                    </p>
+                </li>
+                <li>
+                    <i class="fa fa-mask"></i>
+                    <p>
+                        Alarm System
+                    </p>
+                </li>
+                <li>
+                    <i class="fa fa-volume-up"></i>
+                    <p>
+                        7 Speakers
+                    </p>
+                </li>
+                <li>
+                    <i class="fa fa-bolt"></i>
+                    <p>
+                        Powered Driver Seat
+                    </p>
+                </li>
+                <li>
+                    <i class="fab fa-usb"></i>
+                    <p>
+                        USB Charger
+                    </p>
+                </li>
+                <li>
+                    <i class="fa fa-charging-station"></i>
+                    <p>
+                        12V Power Outlet
+                    </p>
+                </li>
+                <li>
+                    <i class="fa fa-cloud-sun"></i>
+                    <p>
+                        Power Sunroof
+                    </p>
+                </li>
+                <li>
+                    <i class="fa fa-arrows-alt-v"></i>
+                    <p>
+                        Power Windows
+                    </p>
+                </li>
+                <li>
+                    <i class="fa fa-temperature-high"></i>
+                    <p>
+                        Heated Mirrors
+                    </p>
+                </li>
+            </ul>
 
-        All repairs have been done by licensed mechanics, full synthetic oil changes performed every 7000 km’s and only
-        used 93 octane fuel.
 
-        The car comes with both summer and winter wheel/ tire packages
+            <h2 id="Features" class="text-center text-gray-400">
+                <i class="fa fa-gas-pump"></i> Fuel Economy
+            </h2>
+            <ul class="mlit-feature-grid">
+                <li>
+                    <h3>9.8L/km</h3>
+                    <p>
+                        City
+                    </p>
+                </li>
+                <li>
+                    <h3 class="font-bold">8.3L/km</h3>
+                    <p>
+                        Combined
+                    </p>
+                </li>
+                <li>
+                    <h3>6.5L/km</h3>
+                    <p>
+                        Highway
+                    </p>
+                </li>
+            </ul>
 
-        Here’s a link for all the features of this vehicle.
-
-        https://www.autoblog.com/buy/2013-Acura-ILX-2.4L_w_Premium_Package__4dr_Sedan/equipment/
-
-        I'm selling the car as is. I am not in a rush to sell. I will also consider selling the car with safety at an
-        additional cost determined in the negotiation.
-    </section>
-
-    <section id="Condition">
-        Excellent condition
-        One owner
-        Low mileage
-        Cosmetic Damage (Fixed. See FAQ for full details.)
-        Well-Maintained
-        Copy of all maintenance done on the car 
-        New wipers 
-        New battery 
-        Passed road safety check!
-    </section>
-
-    <section id="Features">
-
-        Manual Transmission 
-
-        201 HP (61 more than other 2013 models)
-
-        Bluetooth
-
-        Heated seats
-        
-        Back up camera
-        
-        16" alloy wheels
-        
-        Sunroof
-        
-        Keyless entry
-        
-        Power windows
-        
-        Power mirrors
-        
-        Power seat
-        
-        Leather seats
-
-    </section>
-
-    <section id="Fuel">
-        <div class="container mx-auto">
-            Pull this from the internet. Provide sources. 
         </div>
     </section>
 
     <section id="Gallery">
-        INSERT Tailwind Gallery with pictures of the car. 
+        <div class="container text-center">
+            Gallery with pictures of the car.
+        </div>
     </section>
 
     <section id="FAQs">
 
-        <div class="flex justify-center w-screen h-screen bg-gray-100">
-            <div class="mr-8">
+        <div class="flex justify-center w-screen h-screen">
+            <div class="mx-8">
 
-                <h2 class="max-w-xl pt-10 pb-4 mx-auto font-medium">Frequently Asked Questions (FAQ)</h2>
+                <h2 class="text-4xl text-center text-gray-400">
+                    Frequently Asked Questions (FAQ)
+                </h2>
                 <div class="max-w-xl mx-auto bg-white border border-gray-200">
                     <ul class="shadow-box">
 
@@ -283,13 +485,13 @@
                                 x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
                                 <div class="p-6">
                                     <p>
-                                        If the car alarm goes off, use the manual key to open driver's door. 
+                                        If the car alarm goes off, use the manual key to open driver's door.
                                     </p>
                                     <p>
-                                        Beware of the battery drain. 
+                                        Beware of the battery drain.
                                     </p>
                                     <p>
-                                        etc. 
+                                        etc.
                                     </p>
                                 </div>
                             </div>
@@ -306,6 +508,12 @@
     <section id="footer">
         Footer with site map and everything like that :P
     </section>
+
+    <div class="mlit-scroll-top">
+        <a href="#" role="button" aria-label="Scroll to top">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
 
 </body>
 

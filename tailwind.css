@@ -17,12 +17,12 @@
 @layer base {
 
     h1 {
-        @apply mb-6 text-5xl font-raleway text-cornflower;
+        @apply mb-8 text-5xl font-raleway text-cornflower;
         /* -- means that we can use TailwindCSS utility classes -- */
     }
 
     h2 {
-        @apply mb-3 text-3xl font-raleway text-cornflower;
+        @apply mb-6 text-3xl font-raleway text-cornflower;
     }
 
     h3 {
@@ -30,13 +30,123 @@
     }
 
     p {
-        @apply text-lg;
+        @apply mb-4 text-lg;
     }
 
     /* MOAR */
 
     section {
         @apply py-8;
+    }
+    section .container {
+        @apply max-w-3xl px-4 mx-auto;
+    }
+
+
+    /* Default Navigation System */
+
+    nav ul a {
+        @apply px-3 py-1 mx-1;
+    }
+
+
+
+    /* Feature Grid */
+
+    .mlit-feature-grid {
+        @apply grid max-w-xs grid-cols-1 mx-auto text-center sm:max-w-none sm:grid-cols-2 md:grid-cols-3;
+    }
+    .mlit-feature-grid li {
+        @apply flex flex-row items-center justify-between px-8 py-0 m-2 text-lg transition duration-500 ease-in-out rounded-lg shadow select-none sm:py-4 sm:px-0 sm:justify-center sm:flex-col bg-gray-50 md:p-8;
+    }
+    .mlit-feature-grid > * {
+        @apply transition duration-300 ease-in-out;
+    }
+    .mlit-feature-grid h3 {
+        @apply my-4 text-xl text-gray-700 md:text-2xl;
+    }
+    .mlit-feature-grid i {
+        @apply mx-0 my-4 text-2xl text-gray-400 sm:my-0 sm:mb-4;
+    }
+    .mlit-feature-grid p {
+        @apply m-0 capitalize;
+    }
+    
+    .mlit-feature-grid li:hover {
+        @apply text-white bg-green-400;
+    }
+    .mlit-feature-grid li:hover h3,
+    .mlit-feature-grid li:hover i, 
+    .mlit-feature-grid li:hover p {
+        @apply text-white;
+    }
+
+
+    /* Tag List */
+
+    .mlit-tag-list a {
+        @apply px-4 py-3 my-2 mr-2 transition duration-300 ease-in-out bg-gray-100 rounded-md md:my-0;
+    }
+    .mlit-tag-list a:hover {
+        @apply bg-green-200;
+    }
+
+
+    /* Sticky */
+
+    .mlit-sticky-header {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 11;
+    }
+
+    
+    /* Scroll to Top */
+
+    body {
+        position: relative; /* needed for Pure-CSS smooth scroll */
+    }
+
+    .mlit-scroll-top {
+        color: #007bff;
+        box-sizing: border-box;
+        position: absolute;
+        top: 12rem;
+        right: 2rem;
+        bottom: 0;
+        pointer-events: none;
+        backface-visibility: hidden;
+    }
+    
+    .mlit-scroll-top a {
+        position: fixed; /* fallback */
+        position: sticky;
+        top: -5rem;
+        width: 3rem;
+        height: 3rem;
+        margin-bottom: -5rem;
+        transform: translateY(100vh); /*push to bottom from top (when stuck) */
+        backface-visibility: hidden;
+        text-decoration: none;
+        user-select: none;
+        pointer-events: all;
+        outline: none;
+        overflow: hidden;
+        @apply flex items-center text-white align-middle transition-all duration-300 rounded-md bg-sneaky-blue bg-opacity-60;
+    }
+    .mlit-scroll-top a:hover {
+        @apply bg-opacity-100 rounded-lg;
+    }
+
+    .mlit-scroll-top i {
+        @apply mx-auto text-xl;
+    }
+    
+     @media print {
+        .mlit-scroll-top {
+            display: none !important; 
+        }
     }
 
 }

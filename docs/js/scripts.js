@@ -1,0 +1,2 @@
+$("body").text("jQuery works");
+
