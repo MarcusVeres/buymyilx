@@ -6,7 +6,7 @@
   "scripts": {
     "build": "postcss tailwind.css -o docs/css/styles.css",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch" : "npx tailwindcss -i ./tailwind.css -o ./docs/css/styles.css --jit --purge \"./**/*.html\" --watch"
+    "watch" : "npx tailwindcss -i ./tailwind.css -o ./docs/css/styles.css --jit --purge './**/*.html' --watch"
   },
   "keywords": [
     "2013",
