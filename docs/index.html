@@ -1,13 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini Project</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Buy my 2013 Acura ILX Dynamic (in the GTA)</title>
+
+    <!-- doesn't exist yet, we'll make it -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+
+
 </head>
-<body class="bg-blue-400">
-    Testing 123 Let's GO!
+
+<body>
+
+    <section class="header">
+        <h1 class="text-red-500 text-3xl w-[321px]">
+            Buy my 2013 Acura ILX Dynamic (in the GTA)
+        </h1>
+        <nav>
+            <ul>
+                <a href="#Home">
+                    <li>
+                        <i class="fa fa-home"></i> Home
+                    </li>
+                </a>
+            </ul>
+        </nav>
+    </section>
+
+    <section id="Hero">
+        Pure CSS Scrolling gallery of all pictures of the car. 
+    </section>
+
+    <section id="Intro">
+        For sale is my 2013 Acura ILX 2.4L .Premium Package I've owned this vehicle since 2015 and it's been an absolute
+        pleasure. The car drives and sounds great and has been treated with respect since it's purchase. The odometer
+        currently reads 157K, vast majority was long distance/ highway driving.
+
+        I’m in the process of to another country and the car is available from December
+
+        Considering its age and mileage I would say the car is in "excellent" condition. Typical wear and tear/
+        blemishes for a vehicle of this age are present. This is the last year Acura offered a Manual transmission with
+        the k24 series motor.
+
+        All repairs have been done by licensed mechanics, full synthetic oil changes performed every 7000 km’s and only
+        used 93 octane fuel.
+
+        The car comes with both summer and winter wheel/ tire packages
+
+        Here’s a link for all the features of this vehicle.
+
+        https://www.autoblog.com/buy/2013-Acura-ILX-2.4L_w_Premium_Package__4dr_Sedan/equipment/
+
+        I'm selling the car as is. I am not in a rush to sell. I will also consider selling the car with safety at an
+        additional cost determined in the negotiation.
+    </section>
+
+    <section id="Condition">
+        Excellent condition
+        One owner
+        Low mileage
+        Cosmetic Damage (Fixed. See FAQ for full details.)
+        Well-Maintained
+        Copy of all maintenance done on the car 
+        New wipers 
+        New battery 
+        Passed road safety check!
+    </section>
+
+    <section id="Features">
+
+        Manual Transmission 
+
+        201 HP (61 more than other 2013 models)
+
+        Bluetooth
+
+        Heated seats
+        
+        Back up camera
+        
+        16" alloy wheels
+        
+        Sunroof
+        
+        Keyless entry
+        
+        Power windows
+        
+        Power mirrors
+        
+        Power seat
+        
+        Leather seats
+
+    </section>
+
+    <section id="Fuel">
+        <div class="container mx-auto">
+            Pull this from the internet. Provide sources. 
+        </div>
+    </section>
+
+    <section id="Gallery">
+        INSERT Tailwind Gallery with pictures of the car. 
+    </section>
+
+    <section id="FAQs">
+
+        <div class="flex justify-center w-screen h-screen bg-gray-100">
+            <div class="mr-8">
+
+                <h2 class="max-w-xl pt-10 pb-4 mx-auto font-medium">Frequently Asked Questions (FAQ)</h2>
+                <div class="max-w-xl mx-auto bg-white border border-gray-200">
+                    <ul class="shadow-box">
+
+                        <li class="relative border-b border-gray-200" x-data="{selected:null}">
+                            <button type="button" class="w-full px-8 py-6 text-left"
+                                @click="selected !== 1 ? selected = 1 : selected = null">
+                                <div class="flex items-center justify-between">
+                                    <span>
+                                        Why are you selling?
+                                    </span>
+                                    <span class="ico-plus"></span>
+                                </div>
+                            </button>
+                            <div class="relative overflow-hidden transition-all duration-700 max-h-0" style=""
+                                x-ref="container1"
+                                x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+                                <div class="p-6">
+                                    <p>
+                                        Short answer: I don't need it anymore.
+                                    </p>
+                                    <p>
+                                        We have two cars, and we both work from home. We order almost everything online
+                                        (including groceries) and my non hobbies keep me busy around the house.
+                                    </p>
+                                    <p>
+                                        As much as I like it, I don't like paying for insurance, and maintenance for
+                                        something I drive a handful of times per year. My girlfriend can't drive manual
+                                        transmission, so we're keeping the automatic&hellip;
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="relative border-b border-gray-200" x-data="{selected:null}">
+                            <button type="button" class="w-full px-8 py-6 text-left"
+                                @click="selected !== 2 ? selected = 2 : selected = null">
+                                <div class="flex items-center justify-between">
+                                    <span>
+                                        May I see the CARFAX? </span>
+                                    <span class="ico-plus"></span>
+                                </div>
+                            </button>
+                            <div class="relative overflow-hidden transition-all duration-700 max-h-0" style=""
+                                x-ref="container2"
+                                x-bind:style="selected == 2 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''">
+                                <div class="p-6">
+                                    <p>
+                                        Sure, <a href="documents/carfax.pdf">they're right here</a> (in Canada they are
+                                        called ____).
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="relative border-b border-gray-200" x-data="{selected:null}">
+                            <button type="button" class="w-full px-8 py-6 text-left"
+                                @click="selected !== 3 ? selected = 3 : selected = null">
+                                <div class="flex items-center justify-between">
+                                    <span>
+                                        Has the car been in any accidents? </span>
+                                    <span class="ico-plus"></span>
+                                </div>
+                            </button>
+                            <div class="relative overflow-hidden transition-all duration-700 max-h-0" style=""
+                                x-ref="container3"
+                                x-bind:style="selected == 3 ? 'max-height: ' + $refs.container3.scrollHeight + 'px' : ''">
+                                <div class="p-6">
+                                    <p>
+                                        In 2014 I scraped the paint on a concrete pillar (underground parking lot).
+                                    </p>
+                                    <p>
+                                        It was not possible to simply repaint the door; they had to replace the panels
+                                        with new ones (to match the paint). Since the scrape was long and thin, it went
+                                        across three panels&hellip; and I had to replace all three of them!
+                                        <i class="fa fa-smile"> </i>
+                                    </p>
+                                    <p>
+                                        I couldn't afford that out-of-pocket so I went through insurance&mdash;and they
+                                        went with a top-tier (read: expensive) body shop. Total cost of repair: $5500.00
+                                        CAD
+                                    </p>
+                                    <p>
+                                        Here is the original <a href="images/report.png" target="_blank">police
+                                            report</a> and <a href="images/repair-bill.png">repair bill.</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="relative border-b border-gray-200" x-data="{selected:null}">
+                            <button type="button" class="w-full px-8 py-6 text-left"
+                                @click="selected !== 1 ? selected = 1 : selected = null">
+                                <div class="flex items-center justify-between">
+                                    <span>
+                                        How do I connect my Bluetooth device?
+                                    </span>
+                                    <span class="ico-plus"></span>
+                                </div>
+                            </button>
+                            <div class="relative overflow-hidden transition-all duration-700 max-h-0" style=""
+                                x-ref="container1"
+                                x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+                                <div class="p-6">
+                                    <p>
+                                        Short answer: I don't need it anymore.
+                                    </p>
+                                    <p>
+                                        We have two cars, and we both work from home. We order almost everything online
+                                        (including groceries) and my non hobbies keep me busy around the house.
+                                    </p>
+                                    <p>
+                                        As much as I like it, I don't like paying for insurance, and maintenance for
+                                        something I drive a handful of times per year. My girlfriend can't drive manual
+                                        transmission, so we're keeping the automatic&hellip;
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="relative border-b border-gray-200" x-data="{selected:null}">
+                            <button type="button" class="w-full px-8 py-6 text-left"
+                                @click="selected !== 1 ? selected = 1 : selected = null">
+                                <div class="flex items-center justify-between">
+                                    <span>
+                                        What should I be aware of?
+                                    </span>
+                                    <span class="ico-plus"></span>
+                                </div>
+                            </button>
+                            <div class="relative overflow-hidden transition-all duration-700 max-h-0" style=""
+                                x-ref="container1"
+                                x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+                                <div class="p-6">
+                                    <p>
+                                        Battery Life -- Drive it once a week 30 minutes, ideally.
+                                        Battery will last 2-3 weeks without being driven (security system is a drag)
+                                    </p>
+                                    <p>
+                                        Bluetooth won't work when the car is moving -- even if passenger in the side.
+                                    </p>
+                                    <p>
+                                        As much as I like it, I don't like paying for insurance, and maintenance for
+                                        something I drive a handful of times per year. My girlfriend can't drive manual
+                                        transmission, so we're keeping the automatic&hellip;
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="relative border-b border-gray-200" x-data="{selected:null}">
+                            <button type="button" class="w-full px-8 py-6 text-left"
+                                @click="selected !== 1 ? selected = 1 : selected = null">
+                                <div class="flex items-center justify-between">
+                                    <span>
+                                        Something about the alarm system?
+                                    </span>
+                                    <span class="ico-plus"></span>
+                                </div>
+                            </button>
+                            <div class="relative overflow-hidden transition-all duration-700 max-h-0" style=""
+                                x-ref="container1"
+                                x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+                                <div class="p-6">
+                                    <p>
+                                        If the car alarm goes off, use the manual key to open driver's door. 
+                                    </p>
+                                    <p>
+                                        Beware of the battery drain. 
+                                    </p>
+                                    <p>
+                                        etc. 
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="footer">
+        Footer with site map and everything like that :P
+    </section>
+
 </body>
+
 </html>

@@ -1,3 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    @variants responsive {
+        .rounded-40px {
+            border-radius: 40px;
+        }
+        .mb-minus-20 {
+            margin-bottom: -20px;
+        }
+    }
+}
+
+/* layer base means this is inserted after the base line -- used to override definitions */
+@layer base {
+
+    h1 {
+        @apply mb-6 text-5xl font-raleway text-cornflower;
+        /* -- means that we can use TailwindCSS utility classes -- */
+    }
+
+    h2 {
+        @apply mb-3 text-3xl font-raleway text-cornflower;
+    }
+
+    h3 {
+        @apply mb-2 text-2xl font-raleway;
+    }
+
+    p {
+        @apply text-lg;
+    }
+
+    /* MOAR */
+
+    section {
+        @apply py-8;
+    }
+
+}
