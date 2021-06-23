@@ -16,13 +16,29 @@
 /* layer base means this is inserted after the base line -- used to override definitions */
 @layer base {
 
+    a, 
+    h1, h2, h3, h4, h5, h6 {
+        @apply transition duration-300 ease-in-out;
+    }
+
+    a {
+        @apply text-blue-400 underline;
+    }
+    a:hover {
+        @apply text-green-500;
+    }
+
+    button {
+        @apply outline-none !important;
+    }
+
     h1 {
         @apply mb-8 text-5xl font-raleway text-cornflower;
         /* -- means that we can use TailwindCSS utility classes -- */
     }
 
     h2 {
-        @apply mb-6 text-3xl font-raleway text-cornflower;
+        @apply mb-6 text-3xl mt-14 font-raleway text-cornflower;
     }
 
     h3 {
@@ -45,10 +61,39 @@
 
     /* Default Navigation System */
 
+    nav {
+        @apply text-gray-600;
+    }
     nav ul a {
-        @apply px-3 py-1 mx-1;
+        @apply px-3 py-1 mx-1 text-gray-600 no-underline;
+    }
+    nav ul a i {
+        @apply text-gray-400;
     }
 
+    nav ul a:hover, 
+    nav ul a:hover i {
+        @apply text-green-500;
+    }
+
+
+    /* FAQ Collapsible section */
+
+    .mlit-accordion {
+        @apply rounded-lg;
+    }
+    .mlit-accordion li button {
+        @apply text-lg text-gray-600 transition duration-500 ease-in-out outline-none;
+    }
+    .mlit-accordion li button:hover {
+        @apply text-green-500;
+    }
+    .mlit-accordion li p {
+        @apply text-base;
+    }
+    .mlit-accordion li .content {
+        @apply p-6 rounded-lg bg-gray-50;
+    }
 
 
     /* Feature Grid */
@@ -66,10 +111,10 @@
         @apply my-4 text-xl text-gray-700 md:text-2xl;
     }
     .mlit-feature-grid i {
-        @apply mx-0 my-4 text-2xl text-gray-400 sm:my-0 sm:mb-4;
+        @apply mx-0 my-4 text-4xl text-gray-500 sm:my-0 sm:mb-4;
     }
     .mlit-feature-grid p {
-        @apply m-0 capitalize;
+        @apply m-0 capitalize duration-300;
     }
     
     .mlit-feature-grid li:hover {
@@ -85,10 +130,10 @@
     /* Tag List */
 
     .mlit-tag-list a {
-        @apply px-4 py-3 my-2 mr-2 transition duration-300 ease-in-out bg-gray-100 rounded-md md:my-0;
+        @apply px-4 py-3 my-2 mr-2 transition duration-300 ease-in-out bg-white rounded-md shadow md:my-0;
     }
     .mlit-tag-list a:hover {
-        @apply bg-green-200;
+        @apply shadow-lg;
     }
 
 
@@ -148,5 +193,25 @@
             display: none !important; 
         }
     }
+
+
+    /* Popup Gallery Plug-In */
+
+    .popup-gallery {
+        @apply grid items-center grid-cols-2 sm:grid-cols-3 md:grid-cols-6;
+    }
+    .popup-gallery a {
+        @apply m-2 opacity-60;
+    }
+    .popup-gallery a:hover {
+        @apply opacity-100;
+    }
+    .popup-gallery img {
+        @apply w-full h-auto max-w-xs mx-auto rounded-md shadow-md;
+    }
+    .popup-gallery a:hover img {
+        @apply shadow-lg;
+    }
+
 
 }

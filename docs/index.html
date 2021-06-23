@@ -7,14 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buy my 2013 Acura ILX Dynamic (in the GTA)</title>
 
-    <!-- doesn't exist yet, we'll make it -->
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap" rel="stylesheet">
 
+    <!-- doesn't exist yet, we'll make it -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+ 
     <!-- scripts -->
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js"></script>
     <script src="js/scripts.js"></script>
 
 </head>
@@ -32,7 +37,7 @@
                     </a>
                     <a href="#Overview">
                         <li>
-                            <i class="fa fa-home"></i> Overview
+                            <i class="fa fa-search"></i> Overview
                         </li>
                     </a>
                     <a href="#Features">
@@ -50,7 +55,8 @@
                             <i class="fa fa-question"></i> FAQs
                         </li>
                     </a>
-                    <a href="#Contact">
+                    <!-- TODO :: Set up temporary email that is safe, non-doxx -->
+                    <a href="mailto:marcus.veres@gmail.com">
                         <li>
                             <i class="fa fa-phone"></i> Contact
                         </li>
@@ -78,19 +84,19 @@
             </h2>
             <ul class="mlit-feature-grid">
                 <li>
-                    <h3>201</h3>
+                    <h3 class="font-bold">201</h3>
                     <p>
                         Horsepower
                     </p>
                 </li>
                 <li>
-                    <h3>6-Speed</h3>
+                    <h3 class="font-bold">6-Speed</h3>
                     <p>
                         Stick Shift
                     </p>
                 </li>
                 <li>
-                    <h3>2.4L</h3>
+                    <h3 class="font-bold">2.4L</h3>
                     <p>
                         Displacement
                     </p>
@@ -108,7 +114,7 @@
                     </p>
                 </li>
                 <li>
-                    <i class="fa fa-question"></i>
+                    <i class="fa fa-arrow-circle-up"></i>
                     <p>
                         Front-Wheel Drive
                     </p>
@@ -164,11 +170,10 @@
                 </p>
                 <p>
                     I lived close to work (or worked from home) for 6 of the past 9 years, so it's mostly been used for
-                    grocery trips and weekend driving.
+                    grocery trips and weekend driving. 
                 </p>
                 <p>
-                    The car was given a safety inspection on July 2nd, 2021 and the CARPROOF is available <a
-                        href="#">here</a>.
+                    The car is mechanically-sound. It was given <a href="#">a safety inspection on July 2nd, 2021</a> and the CARPROOF is available <a href="#">here</a>.
                     Comes with both summer and winter wheel/ tire packages.
                     Summer tires are currently installed.
                 </p>
@@ -279,12 +284,20 @@
                 </li>
             </ul>
 
-
+            <ul class="flex flex-col items-center md:justify-center md:flex-row mlit-tag-list">
+                <a class="text-center" href="https://www.auto123.com/en/new-cars/technical-specs/acura/ilx/2013/base/dynamic/#suspension"
+                    target="_blank">
+                    <li class="">
+                        See full list of features for the 2013 Dynamic 
+                    </li>
+                </a>
+            </ul>
+            
             <h2 id="Features" class="text-center text-gray-400">
                 <i class="fa fa-gas-pump"></i> Fuel Economy
             </h2>
             <ul class="mlit-feature-grid">
-                <li>
+                <li> 
                     <h3>9.8L/km</h3>
                     <p>
                         City
@@ -307,29 +320,49 @@
         </div>
     </section>
 
-    <section id="Gallery">
+    <section>
+        <h2 id="Gallery" class="text-center text-gray-400">
+            <i class="fa fa-photo-video"></i> Gallery
+        </h2>
         <div class="container text-center">
-            Gallery with pictures of the car.
+            <div class="popup-gallery">
+                <a href="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_b.jpg" title="The Cleaner"><img src="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_s.jpg"></a>
+                <a href="http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_b.jpg" title="Winter Dance"><img src="http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_s.jpg"></a>
+                <a href="http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_b.jpg" title="The Uninvited Guest"><img src="http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_s.jpg"></a>
+                <a href="http://farm9.staticflickr.com/8383/8563475581_df05e9906d_b.jpg" title="Oh no, not again!"><img src="http://farm9.staticflickr.com/8383/8563475581_df05e9906d_s.jpg"></a>
+                <a href="http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_b.jpg" title="Swan Lake"><img src="http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_s.jpg"></a>
+                <a href="http://farm9.staticflickr.com/8235/8558295467_e89e95e05a_b.jpg" title="The Shake"><img src="http://farm9.staticflickr.com/8235/8558295467_e89e95e05a_s.jpg"></a>
+                <a href="http://farm9.staticflickr.com/8378/8559402848_9fcd90d20b_b.jpg" title="Who's that, mommy?"><img src="http://farm9.staticflickr.com/8378/8559402848_9fcd90d20b_s.jpg"></a>
+                <a href="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_b.jpg" title="The Cleaner"><img src="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_s.jpg"></a>
+                <a href="http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_b.jpg" title="Winter Dance"><img src="http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_s.jpg"></a>
+                <a href="http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_b.jpg" title="The Uninvited Guest"><img src="http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_s.jpg"></a>
+                <a href="http://farm9.staticflickr.com/8383/8563475581_df05e9906d_b.jpg" title="Oh no, not again!"><img src="http://farm9.staticflickr.com/8383/8563475581_df05e9906d_s.jpg"></a>
+                <a href="http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_b.jpg" title="Swan Lake"><img src="http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_s.jpg"></a>
+                <a href="http://farm9.staticflickr.com/8235/8558295467_e89e95e05a_b.jpg" title="The Shake"><img src="http://farm9.staticflickr.com/8235/8558295467_e89e95e05a_s.jpg"></a>
+                <a href="http://farm9.staticflickr.com/8378/8559402848_9fcd90d20b_b.jpg" title="Who's that, mommy?"><img src="http://farm9.staticflickr.com/8378/8559402848_9fcd90d20b_s.jpg"></a>
+                <a href="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_b.jpg" title="The Cleaner"><img src="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_s.jpg"></a>
+                <a href="http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_b.jpg" title="Winter Dance"><img src="http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_s.jpg"></a>
+            </div>
         </div>
     </section>
 
-    <section id="FAQs">
+    <section id="FAQs" class="mb-32">
 
-        <div class="flex justify-center w-screen h-screen">
+        <div class="flex justify-center w-screen">
             <div class="mx-8">
 
                 <h2 class="text-4xl text-center text-gray-400">
                     Frequently Asked Questions (FAQ)
                 </h2>
-                <div class="max-w-xl mx-auto bg-white border border-gray-200">
-                    <ul class="shadow-box">
+                <div class="max-w-xl mx-auto bg-white">
+                    <ul class="mlit-accordion">
 
-                        <li class="relative border-b border-gray-200" x-data="{selected:null}">
+                        <li class="relative" x-data="{selected:null}">
                             <button type="button" class="w-full px-8 py-6 text-left"
                                 @click="selected !== 1 ? selected = 1 : selected = null">
                                 <div class="flex items-center justify-between">
                                     <span>
-                                        Why are you selling?
+                                        Why are you selling the car?
                                     </span>
                                     <span class="ico-plus"></span>
                                 </div>
@@ -337,7 +370,7 @@
                             <div class="relative overflow-hidden transition-all duration-700 max-h-0" style=""
                                 x-ref="container1"
                                 x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
-                                <div class="p-6">
+                                <div class="content">
                                     <p>
                                         Short answer: I don't need it anymore.
                                     </p>
@@ -346,15 +379,43 @@
                                         (including groceries) and my non hobbies keep me busy around the house.
                                     </p>
                                     <p>
-                                        As much as I like it, I don't like paying for insurance, and maintenance for
-                                        something I drive a handful of times per year. My girlfriend can't drive manual
-                                        transmission, so we're keeping the automatic&hellip;
+                                        The other car can carry more (and my girlfriend doesn't drive stick), so it's time to part ways&hellip;
                                     </p>
                                 </div>
                             </div>
                         </li>
 
-                        <li class="relative border-b border-gray-200" x-data="{selected:null}">
+                        <li class="relative" x-data="{selected:null}">
+                            <button type="button" class="w-full px-8 py-6 text-left"
+                                @click="selected !== 1 ? selected = 1 : selected = null">
+                                <div class="flex items-center justify-between">
+                                    <span>
+                                        Why are you selling  through a friend?
+                                    </span>
+                                    <span class="ico-plus"></span>
+                                </div>
+                            </button>
+                            <div class="relative overflow-hidden transition-all duration-700 max-h-0" style=""
+                                x-ref="container1"
+                                x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+                                <div class="content">
+                                    <p>
+                                        Easier to sell it in the GTA; more customers. Don't have time to go up/down.
+                                    </p>
+                                    <p>
+                                        Don't have the time; really pressured with work responsibilities.
+                                    </p>
+                                    <p>
+                                        Was not able to get my vaccine. 
+                                    </p>
+                                    <p>
+                                        Make up some BS.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="relative" x-data="{selected:null}">
                             <button type="button" class="w-full px-8 py-6 text-left"
                                 @click="selected !== 2 ? selected = 2 : selected = null">
                                 <div class="flex items-center justify-between">
@@ -366,16 +427,16 @@
                             <div class="relative overflow-hidden transition-all duration-700 max-h-0" style=""
                                 x-ref="container2"
                                 x-bind:style="selected == 2 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''">
-                                <div class="p-6">
+                                <div class="content">
                                     <p>
-                                        Sure, <a href="documents/carfax.pdf">they're right here</a> (in Canada they are
-                                        called ____).
+                                        Sure thing! 
+                                        In Canada, it's called a CARPROOF report <a href="documents/carfax.pdf">and it's right here</a>.
                                     </p>
                                 </div>
                             </div>
                         </li>
 
-                        <li class="relative border-b border-gray-200" x-data="{selected:null}">
+                        <li class="relative" x-data="{selected:null}">
                             <button type="button" class="w-full px-8 py-6 text-left"
                                 @click="selected !== 3 ? selected = 3 : selected = null">
                                 <div class="flex items-center justify-between">
@@ -387,7 +448,7 @@
                             <div class="relative overflow-hidden transition-all duration-700 max-h-0" style=""
                                 x-ref="container3"
                                 x-bind:style="selected == 3 ? 'max-height: ' + $refs.container3.scrollHeight + 'px' : ''">
-                                <div class="p-6">
+                                <div class="content">
                                     <p>
                                         In 2014 I scraped the paint on a concrete pillar (underground parking lot).
                                     </p>
@@ -395,7 +456,6 @@
                                         It was not possible to simply repaint the door; they had to replace the panels
                                         with new ones (to match the paint). Since the scrape was long and thin, it went
                                         across three panels&hellip; and I had to replace all three of them!
-                                        <i class="fa fa-smile"> </i>
                                     </p>
                                     <p>
                                         I couldn't afford that out-of-pocket so I went through insurance&mdash;and they
@@ -410,7 +470,7 @@
                             </div>
                         </li>
 
-                        <li class="relative border-b border-gray-200" x-data="{selected:null}">
+                        <li class="relativ" x-data="{selected:null}">
                             <button type="button" class="w-full px-8 py-6 text-left"
                                 @click="selected !== 1 ? selected = 1 : selected = null">
                                 <div class="flex items-center justify-between">
@@ -423,7 +483,7 @@
                             <div class="relative overflow-hidden transition-all duration-700 max-h-0" style=""
                                 x-ref="container1"
                                 x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
-                                <div class="p-6">
+                                <div class="content">
                                     <p>
                                         Short answer: I don't need it anymore.
                                     </p>
@@ -440,7 +500,7 @@
                             </div>
                         </li>
 
-                        <li class="relative border-b border-gray-200" x-data="{selected:null}">
+                        <li class="relative" x-data="{selected:null}">
                             <button type="button" class="w-full px-8 py-6 text-left"
                                 @click="selected !== 1 ? selected = 1 : selected = null">
                                 <div class="flex items-center justify-between">
@@ -453,7 +513,7 @@
                             <div class="relative overflow-hidden transition-all duration-700 max-h-0" style=""
                                 x-ref="container1"
                                 x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
-                                <div class="p-6">
+                                <div class="content">
                                     <p>
                                         Battery Life -- Drive it once a week 30 minutes, ideally.
                                         Battery will last 2-3 weeks without being driven (security system is a drag)
@@ -470,7 +530,7 @@
                             </div>
                         </li>
 
-                        <li class="relative border-b border-gray-200" x-data="{selected:null}">
+                        <li class="relative" x-data="{selected:null}">
                             <button type="button" class="w-full px-8 py-6 text-left"
                                 @click="selected !== 1 ? selected = 1 : selected = null">
                                 <div class="flex items-center justify-between">
@@ -483,7 +543,7 @@
                             <div class="relative overflow-hidden transition-all duration-700 max-h-0" style=""
                                 x-ref="container1"
                                 x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
-                                <div class="p-6">
+                                <div class="content">
                                     <p>
                                         If the car alarm goes off, use the manual key to open driver's door.
                                     </p>
@@ -502,11 +562,6 @@
             </div>
 
         </div>
-
-    </section>
-
-    <section id="footer">
-        Footer with site map and everything like that :P
     </section>
 
     <div class="mlit-scroll-top">
