@@ -27,51 +27,54 @@
 <body>
 
     <section class="py-4 bg-white shadow header mlit-sticky-header">
-        <nav class="">
-            <div class="container max-w-3xl mx-auto">
-                <ul class="flex items-center justify-center">
-                    <a href="#Home">
-                        <li>
-                            <i class="fa fa-home"></i> Home
-                        </li>
-                    </a>
-                    <a href="#Overview">
-                        <li>
-                            <i class="fa fa-search"></i> Overview
-                        </li>
-                    </a>
-                    <a href="#Features">
-                        <li>
-                            <i class="fa fa-universal-access"></i> Features
-                        </li>
-                    </a>
-                    <a href="#Gallery">
-                        <li>
-                            <i class="fa fa-photo-video"></i> Gallery
-                        </li>
-                    </a>
-                    <a href="#FAQs">
-                        <li>
-                            <i class="fa fa-question"></i> FAQs
-                        </li>
-                    </a>
-                    <!-- TODO :: Set up temporary email that is safe, non-doxx -->
-                    <a href="mailto:marcus.veres@gmail.com">
-                        <li>
-                            <i class="fa fa-phone"></i> Contact
-                        </li>
-                    </a>
-                </ul>
-        </nav>
-        </div>
+
+        <input type="checkbox" id="site-nav-toggle">
+        <label for="site-nav-toggle" id="site-nav-toggle-label">
+            <i class="fa fa-bars"></i>
+        </label>
+
+        <ul aria-label="" class="" id="site-nav"
+        itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement" role="menubar">
+            <li class="" role="none presentation">
+                <a href="#Home">
+                    <i class="fa fa-home"></i> Home
+                </a>
+            </li>
+            <li class="" role="none presentation">
+                <a href="#Overview">
+                    <i class="fa fa-search"></i> Overview
+                </a>
+            </li>
+            <li class="" role="none presentation">
+                <a href="#Features">
+                    <i class="fa fa-universal-access"></i> Features
+                </a>
+            </li>
+            <li class="" role="none presentation">
+                <a href="#Gallery">
+                    <i class="fa fa-photo-video"></i> Gallery
+                </a>
+            </li>
+            <li class="" role="none presentation">
+                <a href="#FAQs">
+                    <i class="fa fa-question"></i> FAQs
+                </a>
+            </li>
+            <li class="" role="none presentation">
+                <a href="mailto:marcus.veres@gmail.com" role="menuitem">
+                    <i class="fa fa-phone"></i> Contact
+                </a>
+            </li>
+        </ul>
+
     </section>
 
-    <section id="Home" class="py-0">
+    <section id="Home" class="py-0 mlit-scroll-anchor">
         <img class="w-full max-h-[640px]"
             src="https://www.motortrend.com/uploads/sites/5/2013/12/2013-acura-ILX-profile.jpg?fit=around%7C1000:625">
     </section>
 
-    <section id="Overview">
+    <section id="Overview" class="mlit-scroll-anchor">
         <div class="container">
             <h1 class="mt-8 mb-0 text-4xl text-center text-gray-400">
                 2013 Acura ILX Dynamic
@@ -206,7 +209,7 @@
                 </ul>
             </div>
 
-            <h2 id="Features" class="text-center text-gray-400">
+            <h2 id="Features" class="text-center text-gray-400" style="margin-top: -100px; padding-top: 100px;">
                 Features at a Glance
             </h2>
             <ul class="mb-6 mlit-feature-grid">
@@ -320,33 +323,65 @@
         </div>
     </section>
 
-    <section>
-        <h2 id="Gallery" class="text-center text-gray-400">
+    <section id="Gallery" style="margin-top: -50px; padding-top: 50px;">
+        <h2 class="text-center text-gray-400">
             <i class="fa fa-photo-video"></i> Gallery
         </h2>
         <div class="container text-center">
             <div class="popup-gallery">
-                <a href="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_b.jpg" title="The Cleaner"><img src="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_s.jpg"></a>
-                <a href="http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_b.jpg" title="Winter Dance"><img src="http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_s.jpg"></a>
-                <a href="http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_b.jpg" title="The Uninvited Guest"><img src="http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_s.jpg"></a>
-                <a href="http://farm9.staticflickr.com/8383/8563475581_df05e9906d_b.jpg" title="Oh no, not again!"><img src="http://farm9.staticflickr.com/8383/8563475581_df05e9906d_s.jpg"></a>
-                <a href="http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_b.jpg" title="Swan Lake"><img src="http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_s.jpg"></a>
-                <a href="http://farm9.staticflickr.com/8235/8558295467_e89e95e05a_b.jpg" title="The Shake"><img src="http://farm9.staticflickr.com/8235/8558295467_e89e95e05a_s.jpg"></a>
-                <a href="http://farm9.staticflickr.com/8378/8559402848_9fcd90d20b_b.jpg" title="Who's that, mommy?"><img src="http://farm9.staticflickr.com/8378/8559402848_9fcd90d20b_s.jpg"></a>
-                <a href="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_b.jpg" title="The Cleaner"><img src="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_s.jpg"></a>
-                <a href="http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_b.jpg" title="Winter Dance"><img src="http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_s.jpg"></a>
-                <a href="http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_b.jpg" title="The Uninvited Guest"><img src="http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_s.jpg"></a>
-                <a href="http://farm9.staticflickr.com/8383/8563475581_df05e9906d_b.jpg" title="Oh no, not again!"><img src="http://farm9.staticflickr.com/8383/8563475581_df05e9906d_s.jpg"></a>
-                <a href="http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_b.jpg" title="Swan Lake"><img src="http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_s.jpg"></a>
-                <a href="http://farm9.staticflickr.com/8235/8558295467_e89e95e05a_b.jpg" title="The Shake"><img src="http://farm9.staticflickr.com/8235/8558295467_e89e95e05a_s.jpg"></a>
-                <a href="http://farm9.staticflickr.com/8378/8559402848_9fcd90d20b_b.jpg" title="Who's that, mommy?"><img src="http://farm9.staticflickr.com/8378/8559402848_9fcd90d20b_s.jpg"></a>
-                <a href="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_b.jpg" title="The Cleaner"><img src="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_s.jpg"></a>
-                <a href="http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_b.jpg" title="Winter Dance"><img src="http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_s.jpg"></a>
+                <a href="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_b.jpg" title="The Cleaner">
+                    <img src="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_s.jpg">
+                </a>
+                <a href="http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_b.jpg" title="Winter Dance">
+                    <img src="http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_s.jpg">
+                </a>
+                <a href="http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_b.jpg" title="The Uninvited Guest">
+                    <img src="http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_s.jpg">
+                </a>
+                <a href="http://farm9.staticflickr.com/8383/8563475581_df05e9906d_b.jpg" title="Oh no, not again!">
+                    <img src="http://farm9.staticflickr.com/8383/8563475581_df05e9906d_s.jpg">
+                </a>
+                <a href="http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_b.jpg" title="Swan Lake">
+                    <img src="http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_s.jpg">
+                </a>
+                <a href="http://farm9.staticflickr.com/8235/8558295467_e89e95e05a_b.jpg" title="The Shake">
+                    <img src="http://farm9.staticflickr.com/8235/8558295467_e89e95e05a_s.jpg">
+                </a>
+                <a href="http://farm9.staticflickr.com/8378/8559402848_9fcd90d20b_b.jpg" title="Who's that, mommy?">
+                    <img src="http://farm9.staticflickr.com/8378/8559402848_9fcd90d20b_s.jpg">
+                </a>
+                <a href="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_b.jpg" title="The Cleaner">
+                    <img src="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_s.jpg">
+                </a>
+                <a href="http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_b.jpg" title="Winter Dance">
+                    <img src="http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_s.jpg">
+                </a>
+                <a href="http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_b.jpg" title="The Uninvited Guest">
+                    <img src="http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_s.jpg">
+                </a>
+                <a href="http://farm9.staticflickr.com/8383/8563475581_df05e9906d_b.jpg" title="Oh no, not again!">
+                    <img src="http://farm9.staticflickr.com/8383/8563475581_df05e9906d_s.jpg">
+                </a>
+                <a href="http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_b.jpg" title="Swan Lake">
+                    <img src="http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_s.jpg">
+                </a>
+                <a href="http://farm9.staticflickr.com/8235/8558295467_e89e95e05a_b.jpg" title="The Shake">
+                    <img src="http://farm9.staticflickr.com/8235/8558295467_e89e95e05a_s.jpg">
+                </a>
+                <a href="http://farm9.staticflickr.com/8378/8559402848_9fcd90d20b_b.jpg" title="Who's that, mommy?">
+                    <img src="http://farm9.staticflickr.com/8378/8559402848_9fcd90d20b_s.jpg">
+                </a>
+                <a href="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_b.jpg" title="The Cleaner">
+                    <img src="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_s.jpg">
+                </a>
+                <a href="http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_b.jpg" title="Winter Dance">
+                    <img src="http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_s.jpg">
+                </a>
             </div>
         </div>
     </section>
 
-    <section id="FAQs" class="mb-32">
+    <section id="FAQs" class="mb-32 mlit-scroll-anchor">
 
         <div class="flex justify-center w-screen">
             <div class="mx-8">
